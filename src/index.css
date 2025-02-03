@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Playfair+Display:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer base {
+  body {
+    @apply antialiased;
+  }
+
+  h1 {
+    font-family: 'Tenor Sans', sans-serif;
+    @apply tracking-wider;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+.backdrop-blur-sm {
+  backdrop-filter: blur(8px);
+}
