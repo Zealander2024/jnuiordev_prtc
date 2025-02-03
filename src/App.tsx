@@ -1,26 +1,22 @@
 import React, { useState } from 'react';
 import { Menu, ShoppingBag, X } from 'lucide-react';
+import logo from './assets/Logo.png';
+import footerLogo from './assets/footerlogo.png';
+import hero from './assets/hero.png';
+import shopeeIcon from './assets/Shopee Logo.png';
+import model2 from './assets/Model 2.jpg';
+import model3 from './assets/Model 3.jpg';
+import model4 from './assets/Model 4.png';
+import groupProducts1 from './assets/Group Products 1.png';
+import groupProducts2 from './assets/Group Products 2.png';
+import product0 from './assets/Product0.png';
+import product1 from './assets/Product1.png';
+import product2 from './assets/Product2.png';
+import facebookIcon from './assets/facebook-svgrepo-com.svg';
+import instagramIcon from './assets/instagram-svgrepo-com.svg';
 
 // Product categories and data
 const categories = ['Brightening', 'Anti-Acne', 'Anti-Aging'];
-
-const imagePaths = {
-  logo: '../src/assets/Logo.png',
-  footerLogo: '../src/assets/footerlogo.png',
-  hero: '../src/assets/hero.png',
-  shopee: '../src/assets/Shopee Logo.png',
-  facebook: '../src/assets/facebook-svgrepo-com.svg',
-  instagram: '../src/assets/instagram-svgrepo-com.svg',
-  model2: '../src/assets/Model 2.jpg',
-  model3: '../src/assets/Model 3.jpg',
-  model4: '../src/assets/Model 4.png',
-  groupProducts1: '../src/assets/Group Products 1.png',
-  groupProducts2: '../src/assets/Group Products 2.png',
-  product0: '../src/assets/Product0.png',
-  product1: '../src/assets/Product1.png',
-  product2: '../src/assets/Product2.png',
-
-};
 
 const products = [
   {
@@ -28,7 +24,7 @@ const products = [
     name: 'Anti-Acne Serum',
     description: 'A product formulated to give you clearer skin and prevents it from breaking out.',
     price: 800,
-    image: imagePaths.product0,
+    image: product0,
     category: 'Anti-Acne'
   },
   {
@@ -36,7 +32,7 @@ const products = [
     name: 'Anti-Acne Wash Foam',
     description: 'A product formulated to give you clearer skin and prevents it from breaking out.',
     price: 1000,
-    image: imagePaths.product1,
+    image: product1,
     category: 'Anti-Acne'
   },
   {
@@ -44,7 +40,7 @@ const products = [
     name: 'Anti-Acne Toner',
     description: 'A product formulated to give you clearer skin and prevents it from breaking out.',
     price: 650,
-    image: imagePaths.product2,
+    image: product2,
     category: 'Anti-Acne'
   },
   {
@@ -52,7 +48,7 @@ const products = [
     name: 'Anti-Acne Cream',
     description: 'A product formulated to give you clearer skin and prevents it from breaking out.',
     price: 500,
-    image: imagePaths.product0,
+    image: product0,
     category: 'Anti-Acne'
   },
   {
@@ -60,7 +56,7 @@ const products = [
     name: 'Anti-Acne Serum',
     description: 'A product formulated to give you clearer skin and prevents it from breaking out.',
     price: 800,
-    image: imagePaths.product1,
+    image: product1,
     category: 'Anti-Acne'
   },
   {
@@ -68,7 +64,7 @@ const products = [
     name: 'Anti-Acne Wash Foam',
     description: 'A product formulated to give you clearer skin and prevents it from breaking out.',
     price: 1000,
-    image: imagePaths.product2,
+    image: product2,
     category: 'Anti-Acne'
   }
 ];
@@ -142,7 +138,7 @@ function App() {
                 {/* Logo in Mobile Menu */}
                 <div className="mb-16">
                   <img 
-                    src={imagePaths.footerLogo}
+                    src={footerLogo}
                     alt="Tori Skin"
                     className="h-16 object-contain"
                   />
@@ -193,7 +189,7 @@ function App() {
                 </div>
                 <div className="pt-6">
                   <img 
-                    src={imagePaths.logo}
+                    src={logo}
                     alt="Tori Skin" 
                     className="h-[200px] md:h-[400px] object-contain mx-auto md:mx-0"
                   />
@@ -203,7 +199,7 @@ function App() {
               {/* Right Image - Now visible on mobile */}
               <div className="block relative w-full md:w-[740px] h-[400px] md:h-[700px]">
                 <img
-                  src={imagePaths.hero}
+                  src={hero}
                   alt="Beautiful skin"
                   className="absolute inset-0 w-full h-full object-cover object-[center_right] rounded-lg md:rounded-none"
                 />
@@ -266,7 +262,7 @@ function App() {
                       </div>
                       <button className="bg-white">
                         <img 
-                          src={imagePaths.shopee}
+                          src={shopeeIcon}
                           alt="Shopee" 
                           className="w-6 h-6"
                         />
@@ -285,7 +281,7 @@ function App() {
           {/* Top Row */}
           <div className="relative">
             <img 
-              src={imagePaths.model2}
+              src={model2}
               alt="Skincare model"
               className="w-full h-[400px] object-cover"
             />
@@ -306,7 +302,7 @@ function App() {
           </div>
           <div className="relative items-center justify-center">
             <img 
-              src={imagePaths.groupProducts1}
+              src={groupProducts1}
               alt="Product collection"
                className="w-full h-[400px] object-cover"
             />
@@ -315,7 +311,7 @@ function App() {
           {/* Bottom Row */}
           <div className="relative  items-center justify-center">
             <img 
-               src={imagePaths.groupProducts2}
+               src={groupProducts2}
               className="w-full h-[400px] object-cover"
             />
           </div>
@@ -352,15 +348,15 @@ function App() {
               {[
                 {
                   title: 'ANTI-ACNE',
-                  image: imagePaths.model2
+                  image: model2
                 },
                 {
                   title: 'BRIGHTENING',
-                  image: imagePaths.model3
+                  image: model3
                 },
                 {
                   title: 'ANTI-AGING',
-                  image: imagePaths.model4
+                  image: model4
                 }
               ].map((category, index) => (
                 <div key={index} className="space-y-4">
@@ -391,21 +387,21 @@ function App() {
             {/* Logo and Social Icons */}
             <div className="flex flex-col items-center md:w-[400px]">
               <img 
-                src={imagePaths.footerLogo}
+                src={footerLogo}
                 alt="Tori Skin" 
                 className="h-24 object-contain mb-6"
               />
               <div className="flex justify-center space-x-6">
                 <a href="#" className="hover:opacity-80">
                   <img 
-                    src={imagePaths.facebook}
+                    src={facebookIcon}
                     alt="Facebook" 
                     className="w-8 h-8 invert brightness-0"
                   />
                 </a>
                 <a href="#" className="hover:opacity-80">
                   <img 
-                    src={imagePaths.instagram}
+                    src={instagramIcon}
                     alt="Instagram" 
                     className="w-8 h-8 invert brightness-0"
                   />
